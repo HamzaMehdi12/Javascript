@@ -6,7 +6,64 @@
 	<script src="js/script.js"></script>
 	<script>
 		console.log(x);
-		console.log("In head!")
+		console.log("In head!");
+		x = 4;
+		y = 4;
+		if(x === y)
+		{
+			console.log("Strict: x='4' is equal to y=4");
+		}
+		else
+		{
+			console.log("Strict: x='4' is NOT equal to y=4");
+		}
+		if(false || null || undefined || "" || 0 || NaN)
+		{
+			console.log("This line won't ever execute");
+		}
+		else
+		{
+			console.log("All false");
+		}
+
+		if(true && "hello" && 1 && -1 && "false")
+		{
+			console.log("All true");	
+		}
+		function a ()
+		{
+			return {
+				name: "Hamza"
+			};
+		}
+		console.log(a());
+		console.log("Loop starts here");
+		var sum = 0;
+		for(var i = 1; i <= 10; i++) {
+			sum = sum + i;
+		}
+		console.log("Sum is: " + sum);
+
+		function order(sides) {
+			if(sides === undefined)
+			{
+				sides = "whatever";
+			}
+			console.log("Chicken with " + sides);
+		}
+		order("noodles");
+		order();
+
+
+
+
+
+
+
+
+
+
+
 	</script>
 	<title>Java Script</title>
 </head>

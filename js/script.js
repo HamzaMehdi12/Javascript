@@ -1,4 +1,4 @@
-var x = "Hello World!";
+var x = "Hello World";
 var message = "in global";
 console.log("global: message = " + message);
 
@@ -11,3 +11,14 @@ function b () {
 	console.log("b:message = " + message);
 }
 a();
+
+var first_name = "Hamza";
+console.log(first_name);
+
+var string = "Hello";
+string += " World";
+console.log(string + "!");
+console.log((5 + 4)/ 3);
+//console.log(undefined/ 3);
+
+
