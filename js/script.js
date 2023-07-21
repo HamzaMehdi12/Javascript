@@ -22,3 +22,65 @@ console.log((5 + 4)/ 3);
 //console.log(undefined/ 3);
 
 
+// better way obkect literal
+var facebook = {
+	name: "Facebook",
+	ceo: {
+		first_name: "Mark",
+		favColor: "blue"
+	},
+	$stock: 110
+};
+console.log(facebook);
+
+function mult(x,y) {
+	return x * y;
+}
+
+console.log(mult(5, 3));
+mult.ver = "v.1.0.0";
+console.log(mult.ver);
+
+function makemult(mult) {
+	var myFunc = function (x) {
+		return mult * x;
+	};
+	return myFunc;
+}
+
+var mulb3 = makemult(3);
+console.log(mulb3(10));
+function doOperOn(x, operation) {
+	return operation(x);
+}
+var result = doOperOn(5, mulb3);
+console.log(result);
+
+function test() {
+	console.log(this);
+	this.myName = "Mehdi";
+}
+test();
+console.log(window.myName);
+
+
+
+
+function Circle (radius) {
+	this.radius = radius;
+}
+Circle.prototype.getArea = function () {
+	return Math.PI * Math.pow(this.radius, 2);
+}
+var myCircle = new Circle(10);
+console.log(myCircle.getArea());
+
+
+
+
+
+
+
+
+
+

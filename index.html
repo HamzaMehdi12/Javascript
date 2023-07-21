@@ -53,6 +53,17 @@
 		}
 		order("noodles");
 		order();
+		var company = new Object();
+		company.name = "Facebook";
+		console.log(company);
+		company.ceo = new Object();
+		company.ceo.first_name = "Mark";
+		company.ceo.favColor = "blue";
+		console.log(company);
+		console.log(company["name"]); 
+		var stocks = "stock of company";
+		company[stocks] = 110;
+		console.log("Stock price is: " + company[stocks]);
 
 
 
