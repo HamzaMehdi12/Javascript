@@ -75,12 +75,47 @@ Circle.prototype.getArea = function () {
 var myCircle = new Circle(10);
 console.log(myCircle.getArea());
 
+//Arrays
+
+var array = new Array();
+array[0] = "Mehdi";
+array[1] = 2;
+array[2] = function(name) {
+	console.log("Hello " + name);
+};
+array[3] = {course: " HTML, CSS & JS"};
+console.log(array);
+
+//shorthand
+var names =[
+{
+	name: "Yaakov"
+},
+{
+	name: "Hamza"
+},
+{
+	name: "Mehdi"
+}]
+console.log(names);
 
 
 
+var names2 = ["Hamza", "Mehdi", "Syed"];
+
+for( var name in names2){
+	console.log("Hello " + names2[name]);
+}
 
 
 
-
-
-
+//Closures
+function makemuli(muli) {
+	return (
+		function (x) {
+			return muli * x;
+		}
+	);
+}
+var doub = makemuli(2);
+console.log(doub(10));
